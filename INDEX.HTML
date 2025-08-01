@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ADAP | Data Analysis Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-blue: #2563eb;
+      --dark-blue: #1e3a8a;
+      --light-blue: #eff6ff;
+      --accent: #3b82f6;
+    }
+
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--light-blue);
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-weight: 800;
+      color: var(--primary-blue);
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #334155;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary-blue);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+      color: white;
+      padding: 100px 20px 80px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      font-weight: 800;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero button {
+      margin-top: 30px;
+      padding: 12px 30px;
+      font-size: 1rem;
+      background: white;
+      color: var(--primary-blue);
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #e0f2fe;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2.section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      color: var(--primary-blue);
+      margin-bottom: 40px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: var(--dark-blue);
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary-blue);
+    }
+
+    .cta p {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .cta button {
+      margin-top: 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 30px 15px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 2rem; }
+      nav a { margin-left: 12px; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ADAP</h1>
+    <nav>
+      <a href="INDEX.HTML">Home</a>
+      <a href="#">About</a>
+<a href="services.html" style="padding: 12px 24px; background-color: #005fa3; color: white; border-radius: 6px; text-decoration: none;">Explore Our Services</a>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <a href="services.html" style="padding: 12px 24px; background-color: #005fa3; color: white; border-radius: 6px; text-decoration: none;">Explore Our Services</a>
+
+  </ul>
+</nav>
+  </header>
+
+  <section class="hero">
+    <h2>Data That Drives Smarter Decisions</h2>
+    <p>We help businesses and researchers turn raw data into powerful insights through clean reports, dashboards, and visualizations.</p>
+    <button>Let’s Talk</button>
+  </section>
+
+  <section>
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Excel Dashboards</h3>
+        <p>Professional dashboards to visualize key performance metrics and trends using Excel.</p>
+      </div>
+      <div class="service-card">
+        <h3>Data Cleaning</h3>
+        <p>We remove duplicates, correct errors, and prepare clean datasets ready for analysis.</p>
+      </div>
+      <div class="service-card">
+        <h3>Power BI Reporting</h3>
+        <p>Interactive Power BI reports tailored to your needs for dynamic decision-making.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Unlock Insights from Your Data?</h2>
+    <p>Contact ADAP for a consultation and get expert analysis tailored to your business or project.</p>
+    
+  </section>
+
+  <footer>
+    <p>© 2025 ADAP - Data Analysis Professionals</p>
+    <p>Email: peaceuche921@gmail.com.com | Phone: +234 8123699161</p>
+  </footer>
+
+</body>
+</html>

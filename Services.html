@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Services - ADAP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #eaf4ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #005fa3;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 95, 163, 0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      border-top: 4px solid #005fa3;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 95, 163, 0.15);
+    }
+
+    .card h3 {
+      margin: 0 0 0.5rem;
+      color: #005fa3;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Services</h1>
+    <p>Explore the range of services we provide at ADAP</p>
+  </header>
+
+  <div class="container">
+    <a href="data-cleaning.html">
+      <div class="card">
+        <h3>Data Cleaning</h3>
+        <p>Removing duplicates, handling missing values, and preparing clean, usable datasets.</p>
+      </div>
+    </a>
+
+    <a href="data-visualization.html">
+      <div class="card">
+        <h3>Data Visualization</h3>
+        <p>Visual dashboards using Excel, Power BI, and Tableau to make data clear and powerful.</p>
+      </div>
+    </a>
+
+    <a href="data-automation.html">
+      <div class="card">
+        <h3>Data Automation</h3>
+        <p>Automating data workflows using Python, Excel Macros, and scripts to save time.</p>
+      </div>
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 ADAP - Advanced Data Analysis Projects
+  </footer>
+
+</body>
+</html>
